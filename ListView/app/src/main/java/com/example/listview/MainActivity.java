@@ -36,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
         nguonDuLieu.add("Một Triệu Like");
         nguonDuLieu.add("Hãy Trao Cho Anh");
         nguonDuLieu.add("Thanh Xuân");
+        nguonDuLieu.add("Ban doi");
+
         // b2 tìm tham chiếu đến list View
 
         ListView listViewBH = (ListView) findViewById(R.id.lvDanhSachBaiHat);

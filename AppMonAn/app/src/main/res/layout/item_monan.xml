@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_height="50dp"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ImageView
+        android:id="@+id/idAnhDD"
+        android:background="@color/cardview_dark_background"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    <TextView
+        android:id="@+id/TenmonAn"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:textSize="13dp"
+        android:text="Món thứ nhất"
+        />
+    <TextView
+        android:id="@+id/iddonGia"
+            android:textSize="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:textStyle="bold"
+            android:text="20.000Đ"
+            />
+    <TextView
+        android:id="@+id/idmota"
+        android:textSize="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:text="Nội dung mô tả ở đây"
+            />
+    </LinearLayout>
+
+</LinearLayout>
