@@ -8,7 +8,7 @@ public class MonAn {
     private int idAnhdaidien;
 
 
-    // hàm tạo
+    // hàm tạo constructer
 
 
     public MonAn(String tenMonAn, double donGia, String moTaMonAn, int idAnhdaidien) {

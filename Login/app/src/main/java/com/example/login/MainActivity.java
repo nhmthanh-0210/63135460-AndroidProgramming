@@ -1,8 +1,6 @@
-package com.example.hellotestvd2tinhtoan;
+package com.example.login;
 
 import android.os.Bundle;
-import android.view.View;
-import android.widget.EditText;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,31 +21,4 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
     }
-
-
-    public void XuLiCong(View view){
-// tìm điều khiển
-        EditText btna = findViewById(R.id.edta);
-        EditText btnb = findViewById(R.id.edta);
-        EditText btnKQ = findViewById(R.id.editTextText3);
-
-        // lấy điều khiển chuyển về String
-
-        String nutA = btna.getText().toString();
-        String nutB = btnb.getText().toString();
-
-
-        int DLA = Integer.parseInt(nutA);
-        int DLB = Integer.parseInt(nutA);
-
-        int tong = DLA + DLB;
-
-        String ketqua = String.valueOf(tong);
-
-        // in ra màn hình
-
-        btnKQ.setText(ketqua);
-
-    }
-
 }
