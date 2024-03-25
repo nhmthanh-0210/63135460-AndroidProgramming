@@ -19,6 +19,7 @@ public class ManHinhTinhToan extends JFrame {
 	private JTextField textKetqua;
 	private JTextField txtB;
 	private JTextField txtA;
+	private JTextField textTuoi;
 
 
 
@@ -33,14 +34,14 @@ public class ManHinhTinhToan extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblNhpSTh_1 = new JLabel("Nhập vào chiều cao");
+		JLabel lblNhpSTh_1 = new JLabel("Nhập vào chiều cao(Số m . Số Cm)");
 		lblNhpSTh_1.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		lblNhpSTh_1.setBounds(47, 73, 213, 38);
+		lblNhpSTh_1.setBounds(24, 73, 272, 38);
 		contentPane.add(lblNhpSTh_1);
 		
 		JLabel lblNhpSTh = new JLabel("Nhập vào cân nặng");
 		lblNhpSTh.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		lblNhpSTh.setBounds(47, 134, 213, 38);
+		lblNhpSTh.setBounds(24, 134, 213, 38);
 		contentPane.add(lblNhpSTh);
 		
 		textKetqua = new JTextField();
@@ -53,11 +54,11 @@ public class ManHinhTinhToan extends JFrame {
 		
 		txtB = new JTextField();
 		txtB.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		txtB.setBounds(231, 134, 291, 31);
+		txtB.setBounds(328, 138, 291, 31);
 		contentPane.add(txtB);
 		txtB.setColumns(10);
 		
-		JButton btnChia = new JButton("Tính");
+		JButton btnChia = new JButton("Tính BMI");
 		btnChia.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -76,19 +77,32 @@ public class ManHinhTinhToan extends JFrame {
 		txtA = new JTextField();
 		txtA.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		txtA.setColumns(10);
-		txtA.setBounds(231, 77, 291, 31);
+		txtA.setBounds(328, 77, 291, 31);
 		contentPane.add(txtA);
+		
+		JLabel lblNewLabel = new JLabel("Tuổi");
+		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblNewLabel.setBounds(63, 34, 73, 28);
+		contentPane.add(lblNewLabel);
+		
+		textTuoi = new JTextField();
+		textTuoi.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		textTuoi.setColumns(10);
+		textTuoi.setBounds(328, 33, 291, 31);
+		contentPane.add(textTuoi);
 	} 
 	
 	void hamXuLyTinhBMI() {
 		
 		String str_soA = txtA.getText();
 		String str_soB = txtB.getText();
+		String str_tuoi = textTuoi.getText();
 		Double soA = Double.parseDouble(str_soA);
 		Double soB = Double.parseDouble(str_soB);
+		Double soTuoi = Double.parseDouble(str_tuoi);
 		
-		if(soB==0) {
-			textKetqua.setText("B không thể bằng 0!");
+		if(soTuoi < 18) {
+			textKetqua.setText("Không thể đưa ra kết quả BMI chính xác!");
 			return;
 		} 
 		
