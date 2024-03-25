@@ -27,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
         ListView LVdanhsachsanpham= (ListView) findViewById(R.id.LVDSSP);
         ArrayList<SanPham> dsSanPham = new ArrayList<>();
         dsSanPham.add(new SanPham("Iphone 14", 14000000, "Apple tài trợ chương trình này", R.drawable.iphone));
-        
+        dsSanPham.add(new SanPham("Laptop khủng", 20000000, "Laptop gaming mạnh mẽ", R.drawable.laptop));
+        dsSanPham.add(new SanPham("PC cấu hình cao", 35000000, "Cấu hình 3050 rtx", R.drawable.maytinh1));
+
     }
 }
