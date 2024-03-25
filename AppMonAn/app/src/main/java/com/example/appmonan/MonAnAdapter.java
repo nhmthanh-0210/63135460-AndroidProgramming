@@ -58,7 +58,7 @@ public class MonAnAdapter extends BaseAdapter {
         // gắn lên các điều khiển
 
         // Tìm điều khiển
-        TextView textView_TenMon = (TextView) viewHienHanh.findViewById(R.id.TenmonAn);
+        TextView textView_TenMon = (TextView) viewHienHanh.findViewById(R.id.TenSanPham);
         TextView textView_DonGia = (TextView) viewHienHanh.findViewById(R.id.iddonGia);
         TextView textView_Mota = (TextView) viewHienHanh.findViewById(R.id.idmota);
         ImageView imageView_Anh = (ImageView) viewHienHanh.findViewById(R.id.idAnhDD);

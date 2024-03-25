@@ -1,7 +1,10 @@
 package ntu.nguyenhominhthanh_63135460.cau2_appsanpham;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,11 +27,29 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        ListView LVdanhsachsanpham= (ListView) findViewById(R.id.LVDSSP);
-        ArrayList<SanPham> dsSanPham = new ArrayList<>();
-        dsSanPham.add(new SanPham("Iphone 14", 14000000, "Apple tài trợ chương trình này", R.drawable.iphone));
-        dsSanPham.add(new SanPham("Laptop khủng", 20000000, "Laptop gaming mạnh mẽ", R.drawable.laptop));
-        dsSanPham.add(new SanPham("PC cấu hình cao", 35000000, "Cấu hình 3050 rtx", R.drawable.maytinh1));
+        ListView lvDSSanPham = (ListView) findViewById(R.id.LVDSSP);
+        // chuẩn bị dữ liệu
+        ArrayList<SanPham> dsSanPhamm = new ArrayList<SanPham>();
+        dsSanPhamm.add(new SanPham("Iphone 14", 25000000, "Apple cam kết hàng chính hãng", R.drawable.iphone));
+        dsSanPhamm.add(new SanPham("Laptop Gamming", 5000000, "Laptop cấu hình cao đa tác vụ", R.drawable.laptop));
+        dsSanPhamm.add(new SanPham("PC gamming", 25000, "PC với đồ họa đỉnh cao", R.drawable.maytinh1));
 
+
+        SanPhamAdapter adapter =  new SanPhamAdapter(this, dsSanPhamm);
+        lvDSSanPham.setAdapter(adapter);
+
+
+        // bắt xử lí sự kiện
+
+        lvDSSanPham.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                // lấy phần tử được chạm
+
+                SanPham monAnchon = dsSanPhamm.get(position);
+
+                Toast.makeText(MainActivity.this, monAnchon.getTenSanPham(), Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 }
