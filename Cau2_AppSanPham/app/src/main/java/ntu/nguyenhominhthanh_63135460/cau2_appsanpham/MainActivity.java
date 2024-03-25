@@ -1,12 +1,15 @@
 package ntu.nguyenhominhthanh_63135460.cau2_appsanpham;
 
 import android.os.Bundle;
+import android.widget.ListView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,5 +23,10 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        ListView LVdanhsachsanpham= (ListView) findViewById(R.id.LVDSSP);
+        ArrayList<SanPham> dsSanPham = new ArrayList<>();
+        dsSanPham.add(new SanPham("Iphone 14", 14000000, "Apple tài trợ chương trình này", R.drawable.iphone));
+        
     }
 }
