@@ -13,9 +13,9 @@ import java.util.ArrayList;
 public class MonAnAdapter extends BaseAdapter {
 
 
-    private ArrayList<MonAn> dsMonAn;
-    private LayoutInflater layoutInflater;
-    private Context context;
+        private ArrayList<MonAn> dsMonAn;
+        private LayoutInflater layoutInflater;
+        private Context context;
 
     // hàm tạo
 
