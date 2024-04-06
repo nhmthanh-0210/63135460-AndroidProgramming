@@ -65,6 +65,8 @@ public class MainActivity extends AppCompatActivity {
                 String value = baihat_Adapter.getItem(position);
                 // xử lí khác theo yêu cầu
 
+
+                // hàm hiện thông báo đã chọn một bài hát
                 Toast.makeText(MainActivity.this, value, Toast.LENGTH_LONG).show();
 
             }

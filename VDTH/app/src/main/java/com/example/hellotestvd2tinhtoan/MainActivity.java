@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     public void XuLiCong(View view){
 // tìm điều khiển
         EditText btna = findViewById(R.id.edta);
-        EditText btnb = findViewById(R.id.edta);
+        EditText btnb = findViewById(R.id.edtb);
         EditText btnKQ = findViewById(R.id.editTextText3);
 
         // lấy điều khiển chuyển về String
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         int DLA = Integer.parseInt(nutA);
-        int DLB = Integer.parseInt(nutA);
+        int DLB = Integer.parseInt(nutB);
 
         int tong = DLA + DLB;
 
