@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--    cú pháp màu bao gồm màu đầu tiên, cuối cùng, màu trung gian-->
+    <gradient
+        android:angle="90"
+        android:centerColor="#3F51B5"
+        android:endColor="#00BCD4"
+        android:startColor="#CDDC39"
+        android:type="linear"
+        />
+
+
+<!--        su dung the conner để bo góc (corner ?)-->
+        <corners
+            android:bottomRightRadius="120dp"
+            android:bottomLeftRadius="120dp"
+            />
+</shape>

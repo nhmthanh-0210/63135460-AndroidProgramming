@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    cú pháp màu bao gồm màu đầu tiên, cuối cùng, màu trung gian-->
+    <gradient
+        android:angle="90"
+        android:centerColor="#8813F631"
+        android:endColor="#b5b6d2"
+        android:startColor="#0DFD16"
+        android:type="linear"
+        />
+
+</shape>
