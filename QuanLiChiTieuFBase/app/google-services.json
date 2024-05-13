@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "569741508428",
+    "project_id": "android-project-671dc",
+    "storage_bucket": "android-project-671dc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:569741508428:android:09ba4e1cf2103eaf7a59e9",
+        "android_client_info": {
+          "package_name": "vn.edu.minhthanhagh.quanlichitieu"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzb7GGDFyYMsWF1x0Dp_yr5nyUi6hovAQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
