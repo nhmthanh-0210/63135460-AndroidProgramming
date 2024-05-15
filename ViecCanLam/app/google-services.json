@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "456390742072",
+    "project_id": "vieccanlam-ac328",
+    "storage_bucket": "vieccanlam-ac328.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:456390742072:android:7f7a5c711dcb1d168f96cd",
+        "android_client_info": {
+          "package_name": "vn.edu.minhthanhagh.vieccanlam"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhU7gH_bQMXkCypAhJqfedj4VuKWxzzLU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
